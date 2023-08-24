@@ -47,6 +47,7 @@ img {
   /* background-color: rgb(146, 206, 228); */
   /* background-color: rgb(98, 206, 129); */
   background-color: rgb(249, 162, 99);
+  color: white;
 }
 
 .blur-container::before {
