@@ -363,7 +363,6 @@ body.nav-active { overflow: hidden; }
   background-color: rgb(254, 254, 254);
   font: var(--charcoal);
   font-weight: bolder;
-  /* background-color: rgb(83, 131, 118); */
   color: var(--charcoal);
   max-width: 350px;
   width: 100%;
@@ -625,12 +624,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #FEATURES
-\*-----------------------------------*/
-
+  /* #FEATURES */
 .feature .container {
   display: grid;
   gap: 50px;
@@ -661,11 +655,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
-
+  /* #STATS */
 .stats { background-image: linear-gradient(to bottom, var(--white) 50%, var(--cultured) 50%); }
 
 .stats-card {
@@ -683,10 +673,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
-
+  /* #PROJECT */
 .project { background-color: var(--cultured); }
 
 .project :is(.section-subtitle, .section-title) { text-align: center; }
@@ -726,11 +713,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
+  /* #CTA */
 .cta { background-color: var(--charcoal); }
 
 .cta .container {
@@ -751,20 +734,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-/* .footer-content {
-  display: flex;
-  gap: 100px;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
+/* #FOOTER */
 .footer {
   background-color: var(--raisin-black);
   padding-block: 60px 100px;
@@ -819,15 +789,9 @@ body.nav-active { overflow: hidden; }
 
 
 
+  /* #MEDIA QUERIES */
 
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
+/*responsive for large than 575px screen*/
 
 @media (min-width: 575px) {
 
@@ -843,10 +807,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * PROJECTS
-   */
-
+  /* PROJECTS */
   .project-card .card-content { padding: 40px; }
 
 }
@@ -855,42 +816,27 @@ body.nav-active { overflow: hidden; }
 
 
 
-/**
- * responsive for large than 768px screen
- */
-
+/*responsive for large than 768px screen*/
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
+  /* CUSTOM PROPERTY */
   :root {
 
-    /**
-     * spacing
-     */
-
-    --section-padding: 60px;
+    /* spacing */
+    --section-padding: 90px;
 
   }
 
 
 
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container { max-width: 720px; }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
 
 
-  /**
-   * HEADER
-   */
-
+  /* HEADER */
   .header .btn {
     display: block;
     margin-inline-start: auto;
@@ -905,24 +851,16 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero-content {
     max-width: 85%;
     margin-inline: auto;
-    /* color: var(--black-coral); */
   }
 
   .hero-text { --fs-5: 2rem; }
 
 
-
-  /**
-   * SERVICE
-   */
-
+  /* SERVICE */
   .service .section-title {
     max-width: 30ch;
     margin-inline: auto;
@@ -930,10 +868,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * ABOUT
-   */
-
+  /* ABOUT */
   .about .container {
     grid-template-columns: 1fr 0.7fr;
     align-items: center;
@@ -941,10 +876,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * FEATURE
-   */
-
+  /* FEATURE */
   .feature .container {
     grid-template-columns: 0.7fr 1fr;
     align-items: center;
@@ -958,24 +890,15 @@ body.nav-active { overflow: hidden; }
 
 
 
-/**
- * responsive for large than 992px screen
- */
-
+/* responsive for large than 992px screen */
 @media (min-width: 992px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container { max-width: 960px; }
 
 
 
-  /**
-   * HEADER
-   */
-
+  /* HEADER */
   .nav-open-btn,
   .navbar > *:not(.navbar-list),
   .overlay { display: none; }
@@ -1010,10 +933,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero {
     padding-block-start: calc(var(--section-padding) + 50px);
     text-align: left;
@@ -1033,18 +953,12 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * STATS
-   */
-
+  /* STATS */
   .stats-card { grid-template-columns: repeat(4, 1fr); }
 
 
 
-  /**
-   * PROJECT
-   */
-
+  /* PROJECT */
   .project .section-title {
     max-width: 32ch;
     margin-inline: auto;
@@ -1052,10 +966,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * CTA
-   */
-
+  /* CTA */
   .cta .container {
     display: flex;
     justify-content: space-between;
@@ -1071,10 +982,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * FOOTER
-   */
-
+  /* FOOTER */
   .footer .grid-list { grid-template-columns: repeat(4, 1fr); }
 
 }
@@ -1083,87 +991,45 @@ body.nav-active { overflow: hidden; }
 
 
 
-/**
- * responsive for large than 1200px screen
- */
-
+/* responsive for large than 1200px screen */
 @media (min-width: 1200px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container .show .hidden { max-width: 1140px; }
 
 
-
-  /**
-   * HERO
-   */
-
+  /* HERO */
   .hero-text .show .hidden { padding-inline-end: 100px; }
 
 
-
-  /**
-   * SERVICE
-   */
-
+  /* SERVICE */
   .service .grid-list .show .hidden { grid-template-columns: repeat(4, 1fr); }
 
 
-
-  /**
-   * STATS
-   */
-
+  /* STATS */
   .stats .container .show .hidden { max-width: 70%; }
-
   .stats-card .show .hidden { padding: 60px; }
 
 
-
-  /**
-   * PROJECT
-   */
-
+  /* PROJECT */
   .project .grid-list .show .hidden { grid-template-columns: repeat(3, 1fr); }
 
 
-
-  /**
-   * FOOTER
-   */
-
+  /* FOOTER */
   address.footer-text {
     padding-inline-end: 100px;
     margin-block-end: 16px;
   }
-
 }
 
 
-
-
-
-/**
- * responsive for large than 1400px screen
- */
-
+/* responsive for large than 1400px screen */
 @media (min-width: 1400px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /* REUSED STYLE */
   .container .show .hidden { max-width: 1320px; }
 
-  
 
-  /**
-   * FEATURE
-   */
-
+  /* FEATURE */
   .feature-list .show .hidden { grid-template-columns: 1fr 1fr; }
-
 }
